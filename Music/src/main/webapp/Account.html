@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home - Music Folks </title>
+        <link rel="icon" type="image/x-icon" href="./Top_logo.png">
+        <meta name="description" content="Page Description Here" />
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <link rel="stylesheet" href="./css/account.css" type="text/css">       
+        
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/9c85034652.js" crossorigin="anonymous"></script>
+        
+        <style>
+            .material-symbols-rounded {
+              font-variation-settings:
+              'FILL' 1,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 48
+            }
+            .left_Home{
+                color: white;
+            }
+            .left_library{
+                color: grey;
+            }
+            .left_search{    
+                color: grey;
+            }
+            
+            #password{
+                font-variation-settings: 
+                'Fill' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+            }
+            #account1{
+                font-variation-settings: 
+                'Fill' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+            }
+			
+            Body {
+                color: white ;
+                background-color: black;
+            }
+            .Left_logo { 
+  				background-image: url(./Logo.jpg);
+  			}
+           
+        </style> 
+              
+        <script src="./js/account.js"></script>
+      </head>
+<body onload='onld("none")'>
+
+    <div class="split-left">
+    	<br>    
+        <a href="./index.html"><div class="Left_logo"></div></a>
+        <br><br>
+        
+        <div onclick='onld("none")' class="Left_acc" ><span class="material-symbols-rounded" id="account">account_circle</span> <div>Account Details</div>  </div>
+        <br> 
+        <div onclick="pass_change()" class="Left_password" ><span class="material-symbols-rounded" id="password">key</span> <div>Change Password</div> </div> 
+         
+    </div>
+        
+    <div class="split-right" id="right" >
+        <div class="right-head" id="head">            
+        </div>
+        <div class="right-content" id="content">
+            
+        </div>
+    </div> 
+
+</body> 
+
+
+</html>

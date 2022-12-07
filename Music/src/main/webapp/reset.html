@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Password Reset - Music Folks </title>
+        <link rel="icon" type="image/x-icon" href="./Top_logo.png">
+        <meta name="description" content="Page Description Here" />
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <link rel="stylesheet" href="./css/reset.css" type="text/css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600&display=swap" rel="stylesheet">               
+        
+        <style>
+            .material-symbols-rounded {
+              font-variation-settings:
+              'FILL' 1,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 48
+            }
+            Body {
+                color: black ;
+                background-color : white;
+                font-family:Arial, Helvetica, sans-serif;
+            }    
+            
+        </style> 
+        <script src="https://kit.fontawesome.com/9c85034652.js" crossorigin="anonymous"></script>
+
+      </head>
+<body>
+
+    <header>
+        <a  href="./index.html" ><div class="logo"></div></a>
+    </header>
+
+    <div class="log_form">
+    	<br><br>
+        Enter your Email Id or Phone Number that you registered to proceed.
+        <br><br>
+        
+        Email Id or Phone<br>
+        <input type="text"  class="input" id="mail" placeholder="Enter email id or phone" required > <br>
+        <div id="mail_miss"></div>        
+        <div id ="change">    
+        	<div class="sign_up" ><button id="log_in_button" onclick="check()" >Check</button></div>
+        </div>
+    </div>
+    <div class="sign_up_form" >
+    <hr>
+        Don't have an account?
+        <div class="log_in" ><button onclick="sign_up()">SIGN UP</button></div>
+    </div>
+    
+</body> 
+<script src="./js/reset.js"></script>
+
+</html>

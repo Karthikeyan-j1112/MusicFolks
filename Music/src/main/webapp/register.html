@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Register - Music Folks </title>
+        <link rel="icon" type="image/x-icon" href="./Top_logo.png">
+        <meta name="description" content="Page Description Here" />
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <link rel="stylesheet" href="./css/register.css" type="text/css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600&display=swap" rel="stylesheet">
+        
+        <style>
+            .material-symbols-rounded {
+              font-variation-settings:
+              'FILL' 1,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 48
+            }
+            Body {
+                color: black ;
+                background-color : white;
+                font-family:Arial, Helvetica, sans-serif;
+            }    
+            
+        </style> 
+        <script src="https://kit.fontawesome.com/9c85034652.js" crossorigin="anonymous"></script>
+
+         
+      </head>
+<body>
+
+    <header>
+        <a href="./index.html"><div class="logo"></div></a>
+    </header>
+    
+
+    <div class="log_form" >
+        <div align="center" style="font-size: 30px ;" >Sign Up to Start Listening</div>
+        <br><br>
+        <div id="mail_or_number">
+            Email Id<br>
+            <input type="text" class="input" id="mail" placeholder="Enter email id" name="email_id_or_phone_no"  required value="" onkeyup="mail_check()">
+            <div id="mail_miss"></div> 
+            <div id="changer" onclick="change_number()">Use phone number instead</div>
+        </div>
+        <br>
+        Password <br>
+        <div class="input-icons">
+            <div id="icn1"> <i class="fa-solid fa-eye"  onclick="showPassword1(this)"></i> </div>
+			<input id="password1" class="input" type="password" placeholder="Enter Password" name="password" required onkeyup="password_check()">			  
+		    <div id="password_miss"></div>
+        </div>
+        <br>
+        
+        Confirm Password <br>
+        <div class="input-icons">
+            <div id="icn2"> <i class="fa-solid fa-eye"  onclick="showPassword2(this)"></i> </div>
+			<input id="password2" class="input" type="password" placeholder="Enter Password" required onkeyup="password_check()">			  
+            <div id="password_mismatch"></div>
+        </div>
+        <br>
+        Full Name <br>
+        <input class="input" type="text" id="name" placeholder="Enter Your Full Name" name="full_name" required onkeyup="name_check()">
+        <div id="name_miss"></div> 
+        <br>
+        Date of Birth <br>
+        <input class="input" type="date" id="dob" placeholder="Enter Your DOB"  required onchange="dob_change()">
+        <div id="dob_miss"></div> 
+        <br>
+        Please Select a Security Question?
+        <select class="question" name="ques" id="ques">
+			  <option >What's Your First School Name?</option>
+			  <option >In what city were you born?</option>			  
+			  <option >What was your favorite food as a child?</option>
+		</select>
+		<br><br>
+        Answer For the selected Question <br>
+        <input class="input" type="text" id="answer" placeholder="Enter the answer" required onkeyup="answer_change()">
+        <div id="ans_miss"></div> 
+        <br>
+        <div class="sign_up" ><button id="sign_up_button" onclick="submit1()" disabled>SIGN UP</button></div>
+        <hr >
+    </div>
+    <div class="sign_up_form" >
+        Already have an account?
+        <div class="log_in" ><button onclick="log_in()">LOG IN</button></div>
+    </div>
+    
+</body> 
+<script src="./js/register.js"></script>
+
+</html>
